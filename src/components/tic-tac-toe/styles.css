@@ -1,0 +1,95 @@
+/* Container styling */
+.tic-tac-toe-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.status {
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+/* Hover effect */
+.square:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Color for "X" */
+.x-square {
+    color: #FF5722; /* Red color for "X" */
+}
+
+/* Color for "O" */
+.o-square {
+    color: #2196F3; /* Blue color for "O" */
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Grid styling */
+.slgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* Square styling */
+.square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ddd;
+    font-size: 2.5em;
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.square:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+/* Styling for X and O */
+.square:empty {
+    color: #000; /* Default color for empty square */
+}
+
+.square:after {
+    content: attr(data-value);
+    color: #FF5722; /* Default color for 'X' */
+}
+
+.square[data-value="X"] {
+    color: #2196F3; /* Blue color for 'X' */
+}
+
+.square[data-value="O"] {
+    color: #E91E63; /* Pink color for 'O' */
+}
