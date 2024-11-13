@@ -29,21 +29,7 @@ button {
     border-radius: 8px;
     transition: background-color 0.3s;
 }
-/* Hover effect */
-.square:hover {
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
 
-/* Color for "X" */
-.x-square {
-    color: #FF5722; /* Red color for "X" */
-}
-
-/* Color for "O" */
-.o-square {
-    color: #2196F3; /* Blue color for "O" */
-}
 button:hover {
     background-color: #45a049;
 }
@@ -76,20 +62,17 @@ button:hover {
     transform: scale(1.05);
 }
 
-/* Styling for X and O */
-.square:empty {
-    color: #000; /* Default color for empty square */
+/* Winning square style */
+.winning-square {
+    border :2px solid #42ba42;
 }
 
-.square:after {
-    content: attr(data-value);
-    color: #FF5722; /* Default color for 'X' */
+/* Color for "X" */
+.x-square {
+    color: #FF5722; /* Red color for "X" */
 }
 
-.square[data-value="X"] {
-    color: #2196F3; /* Blue color for 'X' */
-}
-
-.square[data-value="O"] {
-    color: #E91E63; /* Pink color for 'O' */
+/* Color for "O" */
+.o-square {
+    color: #2196F3; /* Blue color for "O" */
 }
