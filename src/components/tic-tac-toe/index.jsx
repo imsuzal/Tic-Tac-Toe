@@ -64,7 +64,7 @@ export default function TicTacToe() {
         } else {
             setStatus(`Next player: ${isXTurn ? 'X' : 'O'}`);
         }
-    }, [squares, isXTurn]);
+    }, [squares, isXTurn, getWinner]); // Add getWinner to dependencies
 
     return (
         <div className="container pt-5 tic-tac-toe-container">
@@ -81,8 +81,6 @@ export default function TicTacToe() {
             </div>
             <h2 className="status">{status}</h2>
             <button onClick={handleRestart}>Restart</button>
-
-          
         </div>
     );
 }
